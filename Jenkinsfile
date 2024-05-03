@@ -16,7 +16,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
-                        sh "docker push subbudockerlearning425/adservice"
+                        sh "docker push docker.io/subbudockerlearning425/adservice:latest"
                     }
                 }
             }
