@@ -21,7 +21,7 @@ pipeline {
                 }
             }
         }
-        stage('Complete')
+        stage('Complete') {
             steps {
                 script {
                     sh " echo 'completed' "
