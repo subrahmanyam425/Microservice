@@ -21,5 +21,12 @@ pipeline {
                 }
             }
         }
+        stage('Complete')
+            steps {
+                script {
+                    sh " echo 'completed' "
+                }
+            }
+        }
     }
 }
